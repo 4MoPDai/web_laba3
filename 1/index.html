@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Users</title>
+    <style>
+        #result {
+            display: flex;
+            flex-direction: column;
+        }
+        .btns {
+            margin-top: 10px;
+        }
+        .btns .sorted {
+            margin-top: 10px;
+        }
+        #generate {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+
+        <input type="text" id="fName" placeholder="First Name">
+        <input type="text" id="sName" placeholder="Last Name">
+        <input type="number" id='ratting' value='0' max="100" min="0">
+        <div class="btns">
+            <button id='addUserBtn'>Add user</button>
+            <button id='showAllBtn'>Show All</button>
+            <button id='sortByAlpha'>Filter by Alphabet</button>
+            <button id='sortByRatting'>Filter by Ratting</button>
+            <div class="sorted">
+                <button id='showMaxRatting'>Max Ratting</button>
+                <button id='showMiddleRatting'>Middle Ratting</button>
+                <button id='showMinRatting'>Min Ratting</button>
+                <button id='showDifferenceRatting'>Difference Ratting</button>
+            </div>
+        </div>
+        <ul id="result"></ul>
+    </div>
+    <hr />
+    <div class='generator'>
+        <span style='color: red;' id='message'></span>
+        <br />
+        <br />
+        <input type="text" id='lengthPass' placeholder="Length password">
+        <input type="text" id='letters' placeholder="Letters">
+        <label for='withNum'>With numeric</label>
+        <input type="checkbox" id='withNum'>
+        <br />
+        <button id='generate'>Generate password</button>
+        <br />
+        <br />
+        <span id="password"></span>
+    </div>
+
+
+
+    <script src='./Password.js'></script>
+    <script src='./User.js'></script>
+    <script src='./index.js'></script>
+</body>
+</html>
